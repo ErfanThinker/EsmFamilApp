@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:float="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="280dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="right"
+    android:background="@drawable/paper_background_2">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ایجاد بازی"
+        android:id="@+id/newgame_title"
+        android:textColor="@color/midnight_blue"
+        android:layout_margin="10dp"
+        android:textStyle="bold"
+        android:gravity="center_vertical"
+        android:drawableRight="@drawable/ic_1430483169_flat_icons_graficheria"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_marginLeft="25dp"
+        android:layerType="software"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/dashed_line" />
+
+    <com.wrapp.floatlabelededittext.FloatLabeledEditTextRightSided
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="5dp"
+        float:fletPaddingLeft="10dp"
+        float:fletPaddingRight="10dp"
+        android:id="@+id/new_game_name"
+        float:fletPadding="10dp">
+
+        <EditText
+            android:id="@+id/new_game_name_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme"
+            android:backgroundTint="@color/accentColor"
+            android:singleLine="true"
+            android:textColor="@color/midnight_blue"
+            android:textColorHint="@color/hintColor"
+            android:drawableRight="@drawable/ic_action_name"
+            android:gravity="center_vertical|right"
+            android:hint="نام بازی"/>
+    </com.wrapp.floatlabelededittext.FloatLabeledEditTextRightSided>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical|right">
+
+
+        <Spinner
+            android:id="@+id/maxNumOfPlayersSp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/AppTheme"
+            android:minHeight="25dp"
+            android:gravity="right"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="10dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="تعداد بازیکن ها"
+            android:id="@+id/maxplayertv"
+            android:textColor="@color/midnight_blue"
+            android:layout_margin="10dp"
+            android:gravity="center_vertical"
+            android:drawableRight="@drawable/ic_players"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp"
+        android:gravity="center_vertical|right">
+
+
+        <Spinner
+            android:id="@+id/roundnum_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/AppTheme"
+            android:minHeight="25dp"
+            android:gravity="right"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="10dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="تعداد دورها"
+            android:textColor="@color/midnight_blue"
+            android:layout_margin="10dp"
+            android:gravity="center_vertical"
+            android:id="@+id/roundstv"
+            android:drawableRight="@drawable/ic_rounds"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </LinearLayout>
+
+</LinearLayout>

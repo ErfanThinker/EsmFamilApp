@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:float="http://schemas.android.com/apk/res-auto"
+    xmlns:persianDatePicker="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/paper_background_2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/signup_root_view"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:background="@drawable/paper_background_2"
+        android:layout_height="match_parent">
+
+
+        <com.wrapp.floatlabelededittext.FloatLabeledEditTextRightSided
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginBottom="5dp"
+            float:fletPaddingLeft="10dp"
+            float:fletPaddingRight="10dp"
+            android:id="@+id/name_entry"
+            float:fletPadding="10dp">
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:theme="@style/AppTheme"
+                android:textColor="@color/midnight_blue"
+                android:backgroundTint="@color/accentColor"
+                android:drawableRight="@drawable/ic_action_action_face_unlock"
+                android:gravity="right|center_vertical"
+                android:textColorHint="@color/hintColor"
+                android:hint="نام و نام خانوادگی"/>
+        </com.wrapp.floatlabelededittext.FloatLabeledEditTextRightSided>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="تاریخ تولد"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="25dp"
+            android:id="@+id/bdTV"
+            android:textColor="@color/colorPrimary" />
+
+        <net.crowmaster.esmfamil.widgets.PersianDatePicker
+            android:id="@+id/bdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="5dp"
+            android:layout_gravity="center"
+            android:theme="@style/AppTheme"
+            persianDatePicker:selectedYear="1330"
+            persianDatePicker:selectedMonth="6"
+            persianDatePicker:selectedDay="15"
+            persianDatePicker:displayMonthNames="true"
+            persianDatePicker:minYear="1330"
+            persianDatePicker:yearRange="0"/>
+
+
+        <com.wrapp.floatlabelededittext.FloatLabeledEditTextRightSided
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="5dp"
+            float:fletPaddingLeft="10dp"
+            float:fletPaddingRight="10dp"
+            android:id="@+id/username_entry"
+            float:fletPadding="10dp">
+
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right|center_vertical"
+                android:singleLine="true"
+                android:theme="@style/AppTheme"
+                android:textColor="@color/midnight_blue"
+                android:textColorHint="@color/hintColor"
+                android:backgroundTint="@color/accentColor"
+                android:drawableRight="@drawable/ic_action_user_green"
+                android:hint="نام کاربری"/>
+        </com.wrapp.floatlabelededittext.FloatLabeledEditTextRightSided>
+
+
+
+
+        <com.wrapp.floatlabelededittext.FloatLabeledEditTextLeftSided
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            float:fletPaddingLeft="10dp"
+            float:fletPaddingRight="10dp"
+            android:id="@+id/email_entry"
+            float:fletPadding="10dp">
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:theme="@style/AppTheme"
+                android:textColor="@color/midnight_blue"
+                android:textColorHint="@color/hintColor"
+                android:backgroundTint="@color/accentColor"
+                android:drawableRight="@drawable/ic_action_communication_email_green"
+                android:hint="پست الکترونیکی"/>
+        </com.wrapp.floatlabelededittext.FloatLabeledEditTextLeftSided>
+
+
+        <com.wrapp.floatlabelededittext.FloatLabeledEditTextLeftSided
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            float:fletPaddingLeft="10dp"
+            float:fletPaddingRight="10dp"
+            android:id="@+id/password_entry"
+            float:fletPadding="10dp">
+
+            <EditText
+                android:id="@+id/pass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:theme="@style/AppTheme"
+                android:textColor="@color/midnight_blue"
+                android:textColorHint="@color/hintColor"
+                android:backgroundTint="@color/accentColor"
+                android:drawableRight="@drawable/ic_action_pass"
+                android:gravity="center_vertical|right"
+                android:hint="رمز عبور"/>
+        </com.wrapp.floatlabelededittext.FloatLabeledEditTextLeftSided>
+
+        <com.wrapp.floatlabelededittext.FloatLabeledEditTextLeftSided
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            float:fletPaddingLeft="10dp"
+            float:fletPaddingRight="10dp"
+            android:id="@+id/repeat_password_entry"
+            float:fletPadding="10dp">
+
+            <EditText
+                android:id="@+id/re_pass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:theme="@style/AppTheme"
+                android:textColor="@color/midnight_blue"
+                android:textColorHint="@color/hintColor"
+                android:backgroundTint="@color/accentColor"
+                android:drawableRight="@drawable/ic_action_pass"
+                android:gravity="center_vertical|right"
+                android:hint="تکرار رمز عبور"/>
+        </com.wrapp.floatlabelededittext.FloatLabeledEditTextLeftSided>
+
+
+
+
+        <com.gc.materialdesign.views.ButtonFlat
+            android:id="@+id/signup_button"
+            android:layout_width="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_height="50dp"
+            android:background="@color/accentColor"
+            android:layout_gravity="center"
+            android:text="تایید" />
+
+
+
+
+    </LinearLayout>
+</ScrollView>

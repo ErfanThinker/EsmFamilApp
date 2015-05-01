@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/paper_background_2">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar"
+        android:theme="@style/AppTheme"
+        android:gravity="center_vertical|right"
+        android:background="@color/colorPrimary"
+        >
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/app_name"
+            android:id="@+id/title"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:gravity="right"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="10dp"
+            />
+
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        >
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="25dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+
+            <com.gc.materialdesign.views.ButtonFlat
+                android:id="@+id/waiting_cancel_button"
+                android:layout_width="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content"
+                android:background="@color/accentColor"
+                android:text="خروج"
+
+                />
+
+            <com.gc.materialdesign.views.ButtonFlat
+                android:id="@+id/waiting_return_btn"
+                android:layout_width="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content"
+                android:background="@color/accentColor"
+                android:text="بازگشت"
+
+                />
+
+        </TableRow>
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>

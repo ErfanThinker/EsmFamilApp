@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:float="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/paper_background_2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/paper_background_2"
+        android:gravity="center_horizontal">
+
+        <com.wrapp.floatlabelededittext.FloatLabeledEditTextRightSided
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginBottom="5dp"
+            float:fletPaddingLeft="10dp"
+            float:fletPaddingRight="10dp"
+            android:id="@+id/name_entry"
+            float:fletPadding="10dp">
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:theme="@style/AppTheme"
+                android:textColor="@color/midnight_blue"
+                android:backgroundTint="@color/accentColor"
+                android:drawableRight="@drawable/ic_action_action_face_unlock"
+                android:gravity="right|center_vertical"
+                android:textColorHint="@color/hintColor"
+                android:hint="نام و نام خانوادگی"/>
+        </com.wrapp.floatlabelededittext.FloatLabeledEditTextRightSided>
+
+        <com.gc.materialdesign.views.ButtonFlat
+            android:id="@+id/edit_name_submit"
+            android:layout_width="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_height="50dp"
+            android:background="@color/accentColor"
+            android:layout_gravity="center"
+            android:text="نام و نام خانوادگی مرا تغییر بده!" />
+
+
+
+        <com.wrapp.floatlabelededittext.FloatLabeledEditTextLeftSided
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            float:fletPaddingLeft="10dp"
+            float:fletPaddingRight="10dp"
+            android:id="@+id/old_password_entry"
+            float:fletPadding="10dp">
+
+            <EditText
+                android:id="@+id/old_pass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:theme="@style/AppTheme"
+                android:textColor="@color/midnight_blue"
+                android:textColorHint="@color/hintColor"
+                android:backgroundTint="@color/accentColor"
+                android:drawableRight="@drawable/ic_action_pass_red"
+                android:gravity="center_vertical|right"
+                android:hint="رمز عبور قدیمی"/>
+        </com.wrapp.floatlabelededittext.FloatLabeledEditTextLeftSided>
+
+
+
+        <com.wrapp.floatlabelededittext.FloatLabeledEditTextLeftSided
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            float:fletPaddingLeft="10dp"
+            float:fletPaddingRight="10dp"
+            android:id="@+id/password_entry"
+            float:fletPadding="10dp">
+
+            <EditText
+                android:id="@+id/pass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:theme="@style/AppTheme"
+                android:textColor="@color/midnight_blue"
+                android:textColorHint="@color/hintColor"
+                android:backgroundTint="@color/accentColor"
+                android:drawableRight="@drawable/ic_action_pass"
+                android:gravity="center_vertical|right"
+                android:hint="رمز عبور جدید"/>
+        </com.wrapp.floatlabelededittext.FloatLabeledEditTextLeftSided>
+
+        <com.wrapp.floatlabelededittext.FloatLabeledEditTextLeftSided
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            float:fletPaddingLeft="10dp"
+            float:fletPaddingRight="10dp"
+            android:id="@+id/repeat_password_entry"
+            float:fletPadding="10dp">
+
+            <EditText
+                android:id="@+id/re_pass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:theme="@style/AppTheme"
+                android:textColor="@color/midnight_blue"
+                android:textColorHint="@color/hintColor"
+                android:backgroundTint="@color/accentColor"
+                android:drawableRight="@drawable/ic_action_pass"
+                android:gravity="center_vertical|right"
+                android:hint="تکرار رمز عبور جدید"/>
+        </com.wrapp.floatlabelededittext.FloatLabeledEditTextLeftSided>
+
+
+
+
+        <com.gc.materialdesign.views.ButtonFlat
+            android:id="@+id/change_pass_submit"
+            android:layout_width="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_height="50dp"
+            android:background="@color/accentColor"
+            android:layout_gravity="center"
+            android:text="رمز عبور مرا تغییر بده!" />
+
+    </LinearLayout>
+</ScrollView>

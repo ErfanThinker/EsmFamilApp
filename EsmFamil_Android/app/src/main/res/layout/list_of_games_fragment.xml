@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:materialdesign="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@drawable/paper_background_2"
+    android:layout_height="match_parent">
+
+
+    <net.crowmaster.esmfamil.widgets.HotFixRecyclerView
+        android:layoutDirection="rtl"
+        android:id="@+id/listOfGames"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        />
+    <!--<GridView
+        android:id="@+id/listOfGames"
+        android:numColumns="2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/empty_list_layout"
+        android:textColor="@color/midnight_blue"
+        android:textStyle="bold"
+        android:visibility="gone"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:elevation="21dp"
+        android:layout_centerInParent="true"
+        />
+
+
+
+    <com.gc.materialdesign.views.ButtonFloat
+        android:id="@+id/addBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="24dp"
+        android:layout_marginBottom="24dp"
+        android:elevation="22dp"
+        materialdesign:iconDrawable="@drawable/ic_add"
+        android:background="@color/white_dark"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#00bcd4</color>
+    <color name="statusBar">#00acc1</color>
+    <color name="white">#ffffff</color>
+    <color name="white_dark">#e0f7fa</color>
+    <color name="accentColor">#00b8d4</color>
+    <color name="midnight_blue">#006064</color>
+    <color name="hintColor">#80deea</color>
+    <color name="red">#f44336</color>
+    <color name="black">#1b2121</color>
+    <color name="transparent">#00000000</color>
+</resources>

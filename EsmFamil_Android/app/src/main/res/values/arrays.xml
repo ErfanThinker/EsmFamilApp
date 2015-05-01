@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="drawer_titles">
+        <item>لیست بازی ها</item>
+        <item>آمار بازی های من</item>
+        <item>ویرایش پروفایل</item>
+        <item>تنظیمات برنامه</item>
+        <item>خروج از حساب</item>
+    </string-array>
+
+    <array name="drawer_icons">
+        <item>@drawable/ic_action_view_list</item>
+        <item>@drawable/ic_action_statistics</item>
+        <item>@drawable/ic_action_edit</item>
+        <item>@drawable/ic_action_settings</item>
+        <item>@drawable/ic_action_exit_to_app</item>
+    </array>
+
+</resources>
